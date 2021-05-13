@@ -1,0 +1,220 @@
+html {
+	font-size: 64px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+	font-family: monospace;
+	color: #FFF;;
+}
+
+main {
+	display: block;
+	width: 13rem;
+	min-width: 13rem;
+}
+
+.frame-1 {
+  position: relative;
+	display: flex;
+	margin: auto;
+  top: 1rem;
+	width: 8rem;
+	height: 6.5rem;
+  background: linear-gradient(to right, rgb(65,55,50), rgb(105,95,90), rgb(130, 120, 110) 20%, rgb(205,205,200), rgb(130,120,110) 80%, rgb(105,95,90), rgb(65,55,50));
+	box-shadow: inset 2px 2px 5px rgb(40,30,25), inset -2px -2Px 5px rgb(40,30,25);
+	border-radius: 0.5rem;
+}
+
+.frame-2 {
+	display: flex;
+	position: relative;
+	bottom: 0.25rem;
+	margin: auto;
+	width: 85%;
+	height: 75%;
+	background: linear-gradient(to bottom, rgb(35,30,30) 65%, rgb(165,165,160) 75%, rgb(35,30,30) 85%);
+	border-radius: 0.25rem;
+}
+
+.frame-2::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	background: linear-gradient(to right, rgba(35,30,30,0.0) 40%, rgba(165,165,160, 1.0) 50%, rgba(35,30,30, 0.0) 60%);
+	box-shadow: 1px 1px 2px rgb(205,210,190), -1px -1px 2px rgb(205,210,190), inset 2px 2px 5px rgb(35,30,30), inset -2px -2px 5px rgb(35,30,30);
+	border-radius: 0.25rem;
+}
+
+.screen {
+	margin: auto;
+	z-index: 2;;
+	height: 92%;
+	width: 95%;
+	background: radial-gradient(rgb(150,175,175), rgb(110,125,120));
+	border: solid 1px rgb(35,30,30);
+	border-radius: 0.25rem;
+	box-shadow: inset 2px 2px 5px rgb(70,80,140), inset -2px -2px 5px rgb(70,80,140);
+}
+
+.box-1 {
+	display: flex;
+	position: relative;
+	top: 1rem;
+	margin: 0.25rem auto;
+	width: 13rem;
+	height: 4.5rem;
+	min-width: 13rem;
+	min-height: 4.5rem;
+	background: rgb(30,30,30);
+	border-radius: 0.25rem;
+}
+
+.box-2 {
+	display: flex;
+	position: relative;
+	margin: auto;
+	width: 95%;
+	height: 92%;;
+	background: rgb(10,10,10);
+	border-radius: 0.25rem;
+
+}
+
+.box-3 {
+	display: flex;
+	position: relative;
+	margin: auto;
+	width: 95%;
+	height: 95%;
+	background: linear-gradient(to left, rgb(30, 30, 30), rgb(55,55,60), rgb(95,95,95) 33%, rgb(55,55,60) 90%, rgb(30,30,30));
+	border-radius: 0.25rem;
+	}
+
+section {
+	display: flex;
+}
+
+section div {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	align-items: space-between;
+	margin: 0  auto;
+}
+
+.box-left div div {
+	width: 1.5%;
+	background: rgb(40,40,40);
+	box-shadow: inset -1px 1px 1px rgb(20,20,20), inset 0 -2px 2px rgb(100,105,95);
+	/* border: solid 1px rgb(10,10,10) */
+}
+
+.box-left {
+	width: 66%;
+	height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: space-between;
+}
+
+.box-right {
+	flex-direction: column;
+	justify-content: stretch;
+	width: 30%;
+	margin-top: 0.25rem;
+	margin-bottom: 0.5rem;
+	margin-left: 0;
+	margin-right: 0.1rem;
+	border-top: solid 8px rgb(40,30,30);
+	border-right: solid 10px rgb(20,20,20);
+	border-left: solid 10px rgb(20,20,20);
+	border-bottom: solid 10px rgb(40,30,30);
+}
+
+.grid-1 {
+	width: 95%;
+	margin-top: 0.25rem;
+}
+
+.grid-2 {
+	width: 95%;
+	margin-bottom: 0.5rem;
+}
+
+.grid-1 > div {
+	height: 0.5rem;
+}
+
+.grid-2 > div {
+	height: 1rem;
+}
+
+.disk-1 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 35%;;
+	background: rgb(55,55,55);
+}
+
+.disk-1 div:nth-child(1) {
+	width: 25%;
+	height: 30%;
+	background: linear-gradient(to right, rgb(60,60,60), rgb(50,50,50), rgb(60,60,60));
+	box-shadow: inset -1px 1px 1px rgb(30,30,30), inset 1px 0 1px rgb(30,30,30);
+
+}
+
+.disk-1 div:nth-child(2) {
+	width: 100%;
+	height: 10%;;
+	background: rgb(20,20,20);
+	box-shadow: inset -2px -2px 1px rgb(40,40,40);
+}
+
+.disk-1 div:nth-child(3) {
+	width: 25%;
+	height: 30%;
+	background: linear-gradient(to right, rgb(60,60,60), rgb(50,50,50), rgb(60,60,60));
+	box-shadow: inset -1px -1px 1px rgb(30,30,30), inset 1px 0px 1px rgb(30,30,30)
+}
+
+.disk-2 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 65%;
+	background: linear-gradient(315deg, rgb(15,15,15), rgb(40,40,40));
+}
+
+.disk-2 div:nth-child(1) {
+	width: 25%;
+	height: 35%;
+	background: linear-gradient(to right, rgb(60,60,60), rgb(50,50,50), rgb(60,60,60));
+	box-shadow: inset -1px 1px 1px rgb(30,30,30), inset 1px 0 1px rgb(30,30,30);
+
+}
+
+.disk-2 div:nth-child(2) {
+	width: 100%;
+	height: 20%;;
+	background: rgb(20,20,20);
+	box-shadow: inset -2px -2px 1px rgb(40,40,40);
+}
+
+.disk-2 div:nth-child(3) {
+	width: 25%;
+	height: 35%;
+	background: linear-gradient(to right, rgb(60,60,60), rgb(50,50,50), rgb(60,60,60));
+	box-shadow: inset -1px -1px 1px rgb(30,30,30), inset 1px 0px 1px rgb(30,30,30)
+}
