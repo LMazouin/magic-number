@@ -71,18 +71,40 @@ main {
 	height: 4.5rem;
 	min-width: 13rem;
 	min-height: 4.5rem;
-	background: rgb(30,30,30);
+	background: linear-gradient(to bottom, rgb(30,30,30), rgb(60,60,60), rgb(90,100,100) 40%, rgb(60,60,60), rgb(30,30,30));
+	box-shadow: inset 2px 2px 2px rgb(10,10,10), inset -2px -2px 2px rgb(10,10,10);
 	border-radius: 0.25rem;
 }
+
+.box-1::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: 1;
+	width: 13rem;
+	height: 4.5rem;
+	min-width: 13rem;
+	min-height: 4.5rem;
+	background: linear-gradient(to right, rgba(30,30,30,0.0), rgba(60,60,60,1.0), rgba(90,100,100,1.0) 70%, rgba(60,60,60,1.0), rgba(30,30,30, 0.0));
+	box-shadow: inset 2px 2px 2px rgb(10,10,10), inset -2px -2px 2px rgb(10,10,10);
+	border-radius: 0.25rem;
+}
+
+
 
 .box-2 {
 	display: flex;
 	position: relative;
+	z-index: 2;
 	margin: auto;
 	width: 95%;
 	height: 92%;;
 	background: rgb(10,10,10);
 	border-radius: 0.25rem;
+	/* box-shadow: inset 1px 1px 2px rgb(90,100,100), inset -1px -1px 2px rgb(90,100,100); */
 
 }
 
@@ -91,9 +113,10 @@ main {
 	position: relative;
 	margin: auto;
 	width: 95%;
-	height: 95%;
+	height: 97%;
 	background: linear-gradient(to left, rgb(30, 30, 30), rgb(55,55,60), rgb(95,95,95) 33%, rgb(55,55,60) 90%, rgb(30,30,30));
 	border-radius: 0.25rem;
+	box-shadow: inset 2px 2px 2px rgb(10,10,10), inset -2px -2px 2px rgb(10,10,10);
 	}
 
 section {
@@ -132,8 +155,8 @@ section div {
 	margin-left: 0;
 	margin-right: 0.1rem;
 	border-top: solid 8px rgb(40,30,30);
-	border-right: solid 10px rgb(20,20,20);
-	border-left: solid 10px rgb(20,20,20);
+	border-right: solid 9px rgb(20,20,20);
+	border-left: solid 9px rgb(20,20,20);
 	border-bottom: solid 10px rgb(40,30,30);
 }
 
@@ -166,7 +189,7 @@ section div {
 }
 
 .disk-1 div:nth-child(1) {
-	width: 25%;
+	width: 30%;
 	height: 30%;
 	background: linear-gradient(to right, rgb(60,60,60), rgb(50,50,50), rgb(60,60,60));
 	box-shadow: inset -1px 1px 1px rgb(30,30,30), inset 1px 0 1px rgb(30,30,30);
@@ -174,14 +197,14 @@ section div {
 }
 
 .disk-1 div:nth-child(2) {
-	width: 100%;
+	width: 98%;
 	height: 10%;;
 	background: rgb(20,20,20);
 	box-shadow: inset -2px -2px 1px rgb(40,40,40);
 }
 
 .disk-1 div:nth-child(3) {
-	width: 25%;
+	width: 30%;
 	height: 30%;
 	background: linear-gradient(to right, rgb(60,60,60), rgb(50,50,50), rgb(60,60,60));
 	box-shadow: inset -1px -1px 1px rgb(30,30,30), inset 1px 0px 1px rgb(30,30,30)
@@ -197,24 +220,54 @@ section div {
 	background: linear-gradient(315deg, rgb(15,15,15), rgb(40,40,40));
 }
 
-.disk-2 div:nth-child(1) {
-	width: 25%;
+.disk-2 > div:nth-child(1) {
+	width: 30%;
 	height: 35%;
 	background: linear-gradient(to right, rgb(60,60,60), rgb(50,50,50), rgb(60,60,60));
 	box-shadow: inset -1px 1px 1px rgb(30,30,30), inset 1px 0 1px rgb(30,30,30);
-
+	border-top: solid 1px rgb(20,20,20);
+	border-left: solid 1px rgb(20,20,20);
+	border-right: solid 1px rgb(20,20,20);
 }
 
-.disk-2 div:nth-child(2) {
+.disk-2 > div:nth-child(2) {
+	display: flex;
+	align-items: center;
 	width: 100%;
 	height: 20%;;
-	background: rgb(20,20,20);
-	box-shadow: inset -2px -2px 1px rgb(40,40,40);
+	background: rgb(55,50,50);
+	box-shadow: inset -2px 2px 1px rgb(25,20,20);
 }
 
-.disk-2 div:nth-child(3) {
-	width: 25%;
+.disk-2 > div:nth-child(3) {
+	width: 30%;
 	height: 35%;
-	background: linear-gradient(to right, rgb(60,60,60), rgb(50,50,50), rgb(60,60,60));
+	background: linear-gradient(to bottom, rgb(40,40,40), rgb(60,60,60));
 	box-shadow: inset -1px -1px 1px rgb(30,30,30), inset 1px 0px 1px rgb(30,30,30)
+}
+
+.disk-2 > div:nth-child(2) > div:nth-child(1) {
+	margin-right: 0;
+	width: 34%;
+	height: 30%;;
+	background: rgb(20,20,20);
+	box-shadow: inset 0 -2px 1px rgb(40,40,40);
+
+}
+
+.disk-2 > div:nth-child(2) > div:nth-child(2) {
+	margin: 0;
+	width: 30%;
+	height: 100%;;
+	background: rgb(35,35,35);
+	box-shadow: inset 1px 1px 1px rgb(90,90,75), inset -1px -1px 1px rgb(20,20,20);
+
+}
+
+.disk-2 > div:nth-child(2) > div:nth-child(3) {
+	margin-left: 0;
+	width: 34%;
+	height: 30%;;
+	background: rgb(20,20,20);
+	box-shadow: inset -2px -2px 1px rgb(40,40,40);
 }
