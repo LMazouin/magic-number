@@ -8,7 +8,7 @@ html {
 }
 
 body {
-	font-family: monospace;
+	font-family: sans-serif;
 	color: #FFF;;
 }
 
@@ -29,6 +29,44 @@ main {
 	box-shadow: inset 2px 2px 5px rgb(40,30,25), inset -2px -2px 5px rgb(40,30,25);
 	border-radius: 0.5rem;
 }
+
+.label {
+	position: absolute;
+	top: 90%;
+	left: 10%;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 0.25rem;
+	width: 1.75rem;
+}
+
+.label div:nth-child(1) {
+	height: 100%;
+	width: 10%;
+	background-image: url("./elektronika_logo.svg");
+	background-size: 100% 75%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: rgb(60,65,65);
+	box-shadow: inset -0 -1px 0 rgb(120,130,130), inset 1px 1px 0 rgb(145,145,130);
+}
+
+.label div:nth-child(2) {
+	width: 85%;
+	height: 100%;
+	color: rgb(65,65,70);
+	font-size: 0.125rem;
+	letter-spacing: 2px;
+	background-color: rgb(205,205,200);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: inset -1px -1px 0 rgb(120,130,130), inset 0 1px  0 rgb(200,200,175);
+}
+
 
 .frame-2 {
 	display: flex;
@@ -122,15 +160,6 @@ section {
 	display: flex;
 }
 
-/* section div { */
-/* 	position: relative; */
-/* 	display: flex; */
-/* 	justify-content: space-between; */
-/* 	align-items: space-between; */
-/* 	margin: 0  auto; */
-/* } */
-
-
 .box-left {
 	position: relative;
 	width: 66%;
@@ -175,10 +204,10 @@ section {
 	margin-top: 0.25rem;
 	margin-bottom: 0.5rem;
 	margin-right: 0.1rem;
-	border-top: solid 8px rgb(40,30,30);
-	border-right: solid 7px rgb(20,20,20);
-	border-left: solid 6px rgb(20,20,20);
-	border-bottom: solid 10px rgb(40,30,30);
+	border-bottom: solid 10px rgb(95,95,95);
+	border-right: solid 6px rgb(20,20,20);
+	border-left: solid 4px rgb(20,20,20);
+	border-top: solid 8px rgb(30,30,30);
 }
 
 .grid-1 {
@@ -260,6 +289,7 @@ section {
 
 .disk-2 > div:nth-child(2) {
 	display: flex;
+	justify-content: center;;
 	align-items: center;
 	width: 100%;
 	height: 0.5rem;;
@@ -287,7 +317,7 @@ section {
 
 }
 
-.disk-2 > div:nth-child(2) > div > div, .disk-1 > div:nth-child(2) >div {
+.disk-2 > div:nth-child(2) > div > div, .disk-1 > div:nth-child(2) > div {
 	position: absolute;
 	top: 0;
 	left: 0;
