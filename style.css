@@ -1,5 +1,5 @@
 html {
-	font-size: 64px;
+	font-size: 100px;
 }
 
 * {
@@ -8,29 +8,32 @@ html {
 }
 
 body {
-	font-family: sans-serif;
+	font-family: Arial, sans-serif;
 	color: #FFF;;
 }
 
 main {
-	display: block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
 	width: 13rem;
 	min-width: 13rem;
 }
 
-.frame-1 {
+.screen-frame-1 {
   position: relative;
 	display: flex;
-	margin: auto;
   top: 1rem;
 	width: 8rem;
 	height: 6.5rem;
   background: linear-gradient(to right, rgb(65,55,50), rgb(105,95,90), rgb(130, 120, 110) 20%, rgb(205,205,200), rgb(130,120,110) 80%, rgb(105,95,90), rgb(65,55,50));
-	box-shadow: inset 2px 2px 5px rgb(40,30,25), inset -2px -2px 5px rgb(40,30,25);
+	box-shadow: inset 0.05rem 0.05rem 0.1rem rgb(40,30,25), inset -0.05rem -0.05rem 0.1rem rgb(40,30,25);
 	border-radius: 0.5rem;
 }
 
-.label {
+.screen-label {
 	position: absolute;
 	top: 90%;
 	left: 10%;
@@ -43,7 +46,7 @@ main {
 	width: 1.75rem;
 }
 
-.label div:nth-child(1) {
+.screen-label div:nth-child(1) {
 	height: 100%;
 	width: 10%;
 	background-image: url("./elektronika_logo.svg");
@@ -51,24 +54,24 @@ main {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-color: rgb(60,65,65);
-	box-shadow: inset -0 -1px 0 rgb(120,130,130), inset 1px 1px 0 rgb(145,145,130);
+	box-shadow: inset 0 -0.01rem 0 rgb(120,130,130), inset 0.01rem 0.01rem 0 rgb(145,145,130);
 }
 
-.label div:nth-child(2) {
+.screen-label div:nth-child(2) {
 	width: 85%;
 	height: 100%;
 	color: rgb(65,65,70);
 	font-size: 0.125rem;
-	letter-spacing: 2px;
+	letter-spacing: 0.02rem;
 	background-color: rgb(205,205,200);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	box-shadow: inset -1px -1px 0 rgb(120,130,130), inset 0 1px  0 rgb(200,200,175);
+	box-shadow: inset -0.01rem -0.01rem 0 rgb(120,130,130), inset 0 0.01rem  0 rgb(200,200,175);
 }
 
 
-.frame-2 {
+.screen-frame-2 {
 	display: flex;
 	position: relative;
 	bottom: 0.25rem;
@@ -79,7 +82,7 @@ main {
 	border-radius: 0.25rem;
 }
 
-.frame-2::after {
+.screen-frame-2::after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -88,7 +91,7 @@ main {
 	right: 0;
 	z-index: 1;
 	background: linear-gradient(to right, rgba(35,30,30,0.0) 40%, rgba(165,165,160, 1.0) 50%, rgba(35,30,30, 0.0) 60%);
-	box-shadow: 1px 1px 2px rgb(205,210,190), -1px -1px 2px rgb(205,210,190), inset 2px 2px 5px rgb(35,30,30), inset -2px -2px 5px rgb(35,30,30);
+	box-shadow: 0.02rem 0.02rem 0.05rem rgb(205,210,190), -0.02rem -0.02rem 0.05rem rgb(205,210,190), inset 0.05rem 0.05rem 0.1rem rgb(35,30,30), inset -0.05rem -0.05rem 0.1rem rgb(35,30,30);
 	border-radius: 0.25rem;
 }
 
@@ -98,26 +101,36 @@ main {
 	height: 92%;
 	width: 95%;
 	background: radial-gradient(rgb(150,175,175), rgb(110,125,120));
-	border: solid 1px rgb(35,30,30);
+	border: solid 0.01rem rgb(35,30,30);
 	border-radius: 0.25rem;
-	box-shadow: inset 2px 2px 5px rgb(70,80,140), inset -2px -2px 5px rgb(70,80,140);
+	box-shadow: inset 0.02rem 0.02rem 0.05rem rgb(70,80,140), inset -0.02rem -0.02rem 0.05rem rgb(70,80,140);
 }
 
-.box-1 {
+.between{
+	position: relative;
+	width: 40%;
+	height: 0.1rem;
+	top: 1rem;
+	background: linear-gradient(to bottom, rgb(25,25,25), rgb(50,50,45));
+	/* border-top-right-radius: 0.05rem; */
+	/* border-top-left-radius: 0.05rem; */
+	/* box-shadow: inset 0 -0.01rem 0.01rem rgb(50,40,40) */
+}
+
+.computer-box-1 {
 	display: flex;
 	position: relative;
 	top: 1rem;
-	margin: 0.25rem auto;
 	width: 13rem;
 	height: 4.5rem;
 	min-width: 13rem;
 	min-height: 4.5rem;
 	background: linear-gradient(to bottom, rgb(30,30,30), rgb(60,60,60), rgb(90,100,100) 40%, rgb(60,60,60), rgb(30,30,30));
-	box-shadow: inset 2px 2px 2px rgb(10,10,10), inset -2px -2px 2px rgb(10,10,10);
+	/* box-shadow: inset 0.02rem 0.02rem 0.02rem rgb(10,10,10), inset -0.02rem -0.02rem 0.02rem rgb(10,10,10); */
 	border-radius: 0.25rem;
 }
 
-.box-1::after {
+.computer-box-1::after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -130,11 +143,11 @@ main {
 	min-width: 13rem;
 	min-height: 4.5rem;
 	background: linear-gradient(to right, rgba(30,30,30,0.0), rgba(60,60,60,1.0), rgba(90,100,100,1.0) 70%, rgba(60,60,60,1.0), rgba(30,30,30, 0.0));
-	box-shadow: inset 2px 2px 2px rgb(10,10,10), inset -2px -2px 2px rgb(10,10,10);
-	border-radius: 0.25rem;
+	box-shadow: inset 0.02rem 0 0.02rem rgb(10,10,10), inset -0.02rem -0.02rem 0.02rem rgb(10,10,10);
+	border-radius: inherit;
 }
 
-.box-2 {
+.computer-box-2 {
 	display: flex;
 	position: relative;
 	z-index: 2;
@@ -145,7 +158,7 @@ main {
 	border-radius: 0.25rem;
 }
 
-.box-3 {
+.computer-box-3 {
 	display: flex;
 	position: relative;
 	margin: auto;
@@ -153,14 +166,14 @@ main {
 	height: 98%;
 	background: linear-gradient(to left, rgb(30, 30, 30), rgb(55,55,60), rgb(95,95,95) 33%, rgb(55,55,60) 90%, rgb(30,30,30));
 	border-radius: 0.25rem;
-	box-shadow: inset 2px 2px 2px rgb(10,10,10), inset -2px -2px 2px rgb(10,10,10);
+	box-shadow: inset 0.02rem 0.02rem 0.02rem rgb(10,10,10), inset -0.02rem -0.02rem 0.02rem rgb(10,10,10);
 	}
 
 section {
 	display: flex;
 }
 
-.box-left {
+.computer-box-left {
 	position: relative;
 	width: 66%;
 	height: 100%;
@@ -170,10 +183,10 @@ section {
 }
 
 
-.box-left div div {
+.computer-box-left div div {
 	width: 50%;
 	background: rgb(40,40,40);
-	box-shadow: inset -1px 1px 1px rgb(20,20,20), inset 0 -2px 2px rgb(100,105,95);
+	box-shadow: inset -0.01rem 0.01rem 0.01rem rgb(20,20,20), inset 0 -0.02rem 0.02rem rgb(100,105,95);
 	grid-row: 1 / span 4;
 	/* border: solid 1px rgb(10,10,10) */
 }
@@ -193,10 +206,10 @@ section {
 	background-color: rgb(40,40,40);
 	background-position: center center;
 	background-size: 95% 95%;
-	box-shadow: inset -1px 1px 1px rgb(20,20,20), inset 0 -2px 2px rgb(100,105,95);
+	box-shadow: inset -0.01rem 0.01rem 0.01rem rgb(20,20,20), inset 0 -0.02rem 0.02rem rgb(100,105,95);
 }
 
-.box-right {
+.computer-box-right {
 	position: relative;
 	flex-direction: column;
 	align-items: center;
@@ -204,10 +217,10 @@ section {
 	margin-top: 0.25rem;
 	margin-bottom: 0.5rem;
 	margin-right: 0.1rem;
-	border-bottom: solid 10px rgb(95,95,95);
-	border-right: solid 6px rgb(20,20,20);
-	border-left: solid 4px rgb(20,20,20);
-	border-top: solid 8px rgb(30,30,30);
+	border-bottom: solid 0.1rem rgb(95,95,95);
+	border-right: solid 0.05rem rgb(20,20,20);
+	border-left: solid 0.05rem rgb(20,20,20);
+	border-top: solid 0.08rem rgb(30,30,30);
 }
 
 .grid-1 {
@@ -234,7 +247,7 @@ section {
 	height: 1rem;
 }
 
-.disk-1 {
+.disk-slot-1 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -244,32 +257,32 @@ section {
 	background: rgb(55,55,55);
 }
 
-.disk-1 div:nth-child(1) {
+.disk-slot-1 div:nth-child(1) {
 	width: 30%;
 	height: 25%;
 	margin-top: 2%;
 	background: linear-gradient(to right, rgb(60,60,60), rgb(50,50,50), rgb(60,60,60));
-	box-shadow: inset -1px 1px 1px rgb(30,30,30), inset 1px 0 1px rgb(30,30,30);
+	box-shadow: inset -0.01rem 0.01rem 0.01rem rgb(30,30,30), inset 0.01rem 0 0.01rem rgb(30,30,30);
 
 }
 
-.disk-1 div:nth-child(2) {
+.disk-slot-1 div:nth-child(2) {
 	position: relative;
 	display: flex;
 	width: 98%;
 	height: 0.25rem;;
 	background: rgb(45,45,45);
-	box-shadow: inset 0 2px 1px rgb(25,20,20);
+	box-shadow: inset 0 0.02rem 0.01rem rgb(25,20,20);
 }
 
-.disk-1 div:nth-child(3) {
+.disk-slot-1 div:nth-child(3) {
 	width: 30%;
 	height: 25%;
 	background: linear-gradient(to right, rgb(60,60,60), rgb(50,50,50), rgb(60,60,60));
-	box-shadow: inset -1px -1px 1px rgb(30,30,30), inset 1px 0px 1px rgb(30,30,30)
+	box-shadow: inset -0.01rem -0.01rem 0.01rem rgb(30,30,30), inset 0.01rem 0px 0.01rem rgb(30,30,30)
 }
 
-.disk-2 {
+.disk-slot-2 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -279,32 +292,42 @@ section {
 	background: linear-gradient(315deg, rgb(15,15,15), rgb(40,40,40));
 }
 
-.disk-2 > div:nth-child(1) {
+.disk-slot-2 > div:nth-child(1) {
 	width: 30%;
 	height: 30%;
 	background: linear-gradient(315deg, rgb(40,30,40), rgb(35,35,35));
-	box-shadow: inset 1px 1px 1px rgb(20,20,20), inset -1px -1px 1px rgb(20,20,20);
-	border: solid 1px rgb(2à,20,20);
+	box-shadow: inset 0.01rem 0.01rem 0.01rem rgb(20,20,20), inset -0.01rem -0.01rem 0.01rem rgb(20,20,20);
+	border: solid 0.01rem rgb(20,20,20);
 }
 
-.disk-2 > div:nth-child(2) {
+.disk-slot-2 > div:nth-child(2) {
 	display: flex;
-	justify-content: center;;
+	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 0.5rem;;
+	height: 0.5rem;
 	background: rgb(55,50,50);
-	box-shadow: inset 0 2px 1px rgb(25,20,20);
+	box-shadow: inset 0 0.02rem 0.01rem rgb(25,20,20);
 }
 
-.disk-2 > div:nth-child(3) {
-	width: 30%;
+.disk-slot-2 > div:nth-child(3) {
+	width: 100%;
 	height: 30%;
-	background: linear-gradient(to bottom, rgb(40,40,40), rgb(60,60,60));
-	box-shadow: inset -1px -1px 1px rgb(30,30,30), inset 1px 0 1px rgb(30,30,30);
+	display: grid;
+	grid-template: 1fr / 1fr 30% 1fr;
+
 }
 
-.disk-2 > div:nth-child(2) > div {
+.disk-slot-2 > div:nth-child(3) > div:nth-child(1) {
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, rgb(40,40,40), rgb(60,60,60));
+	box-shadow: inset -0.01rem -0.01rem 0.01rem rgb(30,30,30), inset 0.01rem 0 0.01rem rgb(30,30,30);
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+}
+
+.disk-slot-2 > div:nth-child(2) > div {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -313,11 +336,10 @@ section {
 	width: 98%;
 	height: 0.25rem;;
 	background: rgb(45,45,45);
-	box-shadow: inset 0 2px 1px rgb(25,20,20);
-
+	box-shadow: inset 0 0.02rem 0.01rem rgb(25,20,20);
 }
 
-.disk-2 > div:nth-child(2) > div > div, .disk-1 > div:nth-child(2) > div {
+.disk-slot-2 > div:nth-child(2) > div > div, .disk-slot-1 > div:nth-child(2) > div {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -327,13 +349,13 @@ section {
 	width: 95%;
 	height: 0.0625rem;
 	background: rgb(20,20,20);
-	border-top: solid 2px rgb(45, 45, 45);
-	border-bottom: solid 2px rgb(45, 45, 45);
-	border-left: solid 2px rgb(25, 25, 25);
-	border-right: solid 2px rgb(25, 25, 25);
+	border-top: solid 0.02rem rgb(45, 45, 45);
+	border-bottom: solid 0.02rem rgb(45, 45, 45);
+	border-left: solid 0.02rem rgb(25, 25, 25);
+	border-right: solid 0.02rem rgb(25, 25, 25);
 }
 
-.disk-2 > div:nth-child(2) > div::after {
+.disk-slot-2 > div:nth-child(2) > div::after {
 	content: "";
 	position: absolute;
 	margin: auto;
@@ -345,18 +367,20 @@ section {
 	width: 30%;
 	height: 0.5rem;;
 	background: linear-gradient(315deg, rgb(40,30,40), rgb(35,35,35));
-	box-shadow: inset 1px 1px 1px rgb(60,55,50), inset -1px -1px 1px rgb(20,20,20);
+	box-shadow: inset 0.01rem 0.01rem 0.01rem rgb(60,55,50), inset -0.01rem -0.01rem 0.01rem rgb(20,20,20);
 }
 
 .lamp {
 	position: relative;
-	right: 75%;
-	top: 50%;
 	width: 0.25rem;
 	height: 0.25rem;
 	border-radius: 50%;
 	background: rgb(15,15,15);
-	box-shadow: inset 0 -2px 1px rgb(40,40,40);
+	box-shadow: inset 0 -0.02rem 0.01rem rgb(40,40,40);
+	grid-column: 1 / span 1;
+	grid-row: 1 / span 1;
+	align-self: end;
+	justify-self: center;
 }
 
 .lamp::after {
@@ -366,12 +390,13 @@ section {
 	left: 0;
 	bottom: 0;
 	right: 0;
+	z-index: 3;
 	margin: auto;
 	width: 0.125rem;
 	height: 0.125rem;
 	border-radius: inherit;
 	background: rgb(115,10,15);
-	box-shadow: inset 0 2px 1px rgb(70,0,15);
+	box-shadow: inset 0 0.02rem 0.01rem rgb(70,0,15);
 }
 
 .lamp::before {
@@ -381,7 +406,7 @@ section {
 	left: 5%;
 	bottom: 0;
 	right: 0;
-	z-index: 2;
+	z-index: 4;
 	margin: auto;
 	width: 0.03125rem;
 	height: 0.03125rem;
