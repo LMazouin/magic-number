@@ -1,0 +1,51 @@
+@font-face {
+	font-family: "Classic Console" url("./clacon.ttf") format("truetype");
+}
+
+.screen div {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+	height: 95%;
+  width: 95%;;
+  font-family: "Classic Console", Times, serif;
+	color: rgb(255,255,255);
+}
+
+.screen:hover div {
+  display: flex;
+}
+
+.screen div h2 {
+	font-size: 0.48rem;
+}
+
+.screen div h1 {
+	font-size: 0.64rem;
+}
+
+.screen div label {
+	font-size: 0.32rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.screen div label input {
+	border: none;
+  width: 0.64rem;;
+  color: rgb(170,195,195);
+	font-size: 0.32rem;
+  font-family: "Classic Console", Times, serif;
+  text-align: center;
+  caret-color: rgb(170,195,195);
+	font-size: 0.32rem;
+}
+
+.screen div label input:focus {
+	outline: none;
+}
+
+.screen div p {
+  font-size: 0.32rem;;
+}
