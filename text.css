@@ -35,6 +35,7 @@
 	border: none;
   width: 0.64rem;;
   color: rgb(170,195,195);
+  background: rgb(255,255,255);
 	font-size: 0.32rem;
   font-family: "Classic Console", Times, serif;
   text-align: center;
@@ -46,6 +47,28 @@
 	outline: none;
 }
 
+.screen div label input:disabled {
+  background:  rgb(255,255,255);
+}
+
 .screen div p {
   font-size: 0.32rem;;
+}
+
+.screen div div {
+  align-items: flex-start;
+  width: 50%;
+  height: 10%;
+  background: transparent;
+  border: solid 0.04rem rgb(255,255,255)
+}
+
+.screen div div .progress-bar {
+  box-sizing: border-box;
+  height: 100%;
+  width: 0%;
+  transition: width 500ms linear;
+  background: rgb(255,255,255);
+  border: none;
+
 }
