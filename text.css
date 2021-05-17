@@ -18,7 +18,7 @@
 }
 
 .screen div h2 {
-	font-size: 0.48rem;
+	font-size: 0.32rem;
 }
 
 .screen div h1 {
@@ -26,7 +26,7 @@
 }
 
 .screen div label {
-	font-size: 0.32rem;
+	font-size: 0.48rem;
   display: flex;
   justify-content: space-around;
 }
@@ -36,7 +36,7 @@
   width: 0.64rem;;
   color: rgb(170,195,195);
   background: rgb(255,255,255);
-	font-size: 0.32rem;
+	font-size: 0.48rem;
   font-family: "Classic Console", Times, serif;
   text-align: center;
   caret-color: rgb(170,195,195);
@@ -52,7 +52,7 @@
 }
 
 .screen div p {
-  font-size: 0.32rem;;
+  font-size: 0.48rem;;
 }
 
 .screen div div {

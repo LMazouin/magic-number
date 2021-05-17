@@ -28,7 +28,7 @@ main {
 	width: 8rem;
 	height: 6.5rem;
   background: linear-gradient(to right, rgb(65,55,50), rgb(105,95,90), rgb(130, 120, 110) 20%, rgb(205,205,200), rgb(130,120,110) 80%, rgb(105,95,90), rgb(65,55,50));
-	box-shadow: inset 0.05rem 0.05rem 0.1rem rgb(40,30,25), inset -0.05rem -0.05rem 0.1rem rgb(40,30,25);
+	box-shadow: inset 0.04rem 0.04rem 0.1rem rgb(40,30,25), inset -0.04rem -0.04rem 0.1rem rgb(40,30,25);
 	border-radius: 0.5rem;
 }
 
@@ -90,7 +90,7 @@ main {
 	right: 0;
 	z-index: 1;
 	background: linear-gradient(to right, rgba(35,30,30,0.0) 40%, rgba(165,165,160, 1.0) 50%, rgba(35,30,30, 0.0) 60%);
-	box-shadow: 0.02rem 0.02rem 0.05rem rgb(205,210,190), -0.02rem -0.02rem 0.05rem rgb(205,210,190), inset 0.05rem 0.05rem 0.1rem rgb(35,30,30), inset -0.05rem -0.05rem 0.1rem rgb(35,30,30);
+	box-shadow: 0.02rem 0.02rem 0.04rem rgb(205,210,190), -0.02rem -0.02rem 0.04rem rgb(205,210,190), inset 0.04rem 0.04rem 0.1rem rgb(35,30,30), inset -0.04rem -0.04rem 0.1rem rgb(35,30,30);
 	border-radius: 0.25rem;
 }
 
@@ -106,7 +106,7 @@ main {
 	background: radial-gradient(rgb(150,175,175), rgb(110,125,120));
 	border: solid 0.02rem rgb(35,30,30);
 	border-radius: 0.25rem;
-	box-shadow: inset 0.02rem 0.02rem 0.05rem rgb(70,80,140), inset -0.02rem -0.02rem 0.05rem rgb(70,80,140);
+	box-shadow: inset 0.02rem 0.02rem 0.04rem rgb(70,80,140), inset -0.02rem -0.02rem 0.04rem rgb(70,80,140);
 }
 
 .screen:hover {
@@ -119,8 +119,8 @@ main {
 	height: 0.1rem;
 	top: 1rem;
 	background: linear-gradient(to bottom, rgb(25,25,25), rgb(50,50,45));
-	/* border-top-right-radius: 0.05rem; */
-	/* border-top-left-radius: 0.05rem; */
+	/* border-top-right-radius: 0.04rem; */
+	/* border-top-left-radius: 0.04rem; */
 	/* box-shadow: inset 0 -0.02rem 0.02rem rgb(50,40,40) */
 }
 
@@ -224,9 +224,9 @@ section {
 	margin-top: 0.25rem;
 	margin-bottom: 0.5rem;
 	margin-right: 0.1rem;
-	border-bottom: solid 0.1rem rgb(95,95,95);
-	border-right: solid 0.05rem rgb(20,20,20);
-	border-left: solid 0.05rem rgb(20,20,20);
+	border-bottom: solid 0.2rem rgb(95,95,95);
+	border-right: solid 0.04rem rgb(20,20,20);
+	border-left: solid 0.04rem rgb(20,20,20);
 	border-top: solid 0.08rem rgb(30,30,30);
 }
 
